@@ -7,9 +7,9 @@ import (
 
 func main() {
 	var wg sync.WaitGroup
-	wg.Add(100)
+	wg.Add(5)
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 5; i++ {
 		go func() {
 			fmt.Println(i)
 			wg.Done()
